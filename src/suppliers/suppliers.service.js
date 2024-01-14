@@ -16,7 +16,6 @@ function update(updatedSupplier) {
         .select("*")
         .where({ supplier_id: updatedSupplier.supplier_id })
         .update(updatedSupplier, "*")
-        .then((updatedRow) => updatedRow[0]);
 }
 
 function destroy(supplier_id) {

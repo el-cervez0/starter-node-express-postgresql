@@ -55,7 +55,7 @@ async function update(req, res, next) {
   };
 
   const data = await suppliersService.update(updatedSupplier);
-  res.json({ daat });
+  res.json({ data });
 }
 
 async function destroy(req, res, next) {
